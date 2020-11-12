@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+* {
+  font-family: Lora;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+ *  Generic
+ */ 
+body {
+  background-color: darkgray;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #52D053;
+  display: block;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px black;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  min-height: 500px;
+}
+
+/*
+ *  Button Generic
+ */ 
+button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+button:hover {
+  opacity: 1;
+}
+
+button.btn-delete {
+  background-color: #D3290F;
+}
+
+/* 
+ *  Column Creation Button
+ */
+button.create-column {
+  padding: 25px 50px;
+  font-size: 30px;
+}
+
+/*
+ *  Column CSS
+ */
+h2.column-title {
+  padding: 10px 20px;
+  margin: 2% 10% 4% 10%;
+}
+
+div.column-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.column {
+  background-color: #765898;
+  padding: 0 50px;
+  position: relative;
+  width: 20%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px black;
+  color: black;
+}
+
+div.column .btn-delete {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+ul.column-card-list {
+  min-height: 300px;
+  background-color: #52D053;
+  border: 1px solid black;
+}
+
+/*
+ *  Card CSS
+ */
+li.card {
+  background-color: #E6770B;
+  min-height: 100px;
+  color: white;
+  position: relative;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px black;
+  font-size: 16px;
+  overflow: auto;
+  font-weight: bold;
+}
+
+li.card .btn-delete {
+  position: absolute;
+  padding: 2.5px 5px;
+  top: 1px;
+  right: 1px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+li.card .card-description {
+  padding: 15px;
+}
